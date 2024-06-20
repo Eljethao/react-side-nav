@@ -1,0 +1,10 @@
+{
+    "name": "react-side-nav",
+    "version": "1.0.0",
+    "main": "index.js",
+    "peerDependencies": {
+      "react": "^17.0.0",
+      "react-router-dom": "^6.0.0"
+    }
+  }
+  
