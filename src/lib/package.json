@@ -1,6 +1,6 @@
 {
   "name": "reactjs-side-nav",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple and customizable side navigation component for React applications, built using react-router-dom v6.",
   "main": "lib/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "react-router-dom",
     "react-component"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "LJ Thao",
   "license": "MIT",
   "dependencies": {
     "react": "^17.0.0",
@@ -27,6 +27,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/my-react-side-nav.git"
+    "url": "https://github.com/Eljethao/react-side-nav"
   }
 }
