@@ -1,10 +1,32 @@
 {
-    "name": "react-side-nav",
-    "version": "1.0.0",
-    "main": "index.js",
-    "peerDependencies": {
-      "react": "^17.0.0",
-      "react-router-dom": "^6.0.0"
-    }
+  "name": "my-react-side-nav",
+  "version": "1.0.0",
+  "description": "A simple and customizable side navigation component for React applications, built using react-router-dom v6.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "react",
+    "side-navigation",
+    "sidebar",
+    "react-router-dom",
+    "react-component"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-router-dom": "^6.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-router-dom": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/my-react-side-nav.git"
   }
-  
+}
