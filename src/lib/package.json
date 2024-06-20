@@ -1,6 +1,6 @@
 {
-  "name": "my-react-side-nav",
-  "version": "1.0.0",
+  "name": "reactjs-side-nav",
+  "version": "1.0.1",
   "description": "A simple and customizable side navigation component for React applications, built using react-router-dom v6.",
   "main": "lib/index.js",
   "scripts": {
