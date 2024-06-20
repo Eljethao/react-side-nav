@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# reactjs-side-nav
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+`reactjs-side-nav` is a simple and customizable side navigation component for React applications, built using `react-router-dom` v6. It provides a sleek and responsive navigation sidebar that integrates seamlessly with your React project, making it easy to navigate between different routes.
 
-## Available Scripts
+## Features
+- **Easy Integration**: Quickly integrate the side navigation component into your existing React projects.
+- **Customizable**: Easily customize the styles to match your application's design.
+- **Responsive Design**: Works well on both desktop and mobile devices.
+- **React Router v6**: Built with the latest version of `react-router-dom` for smooth and efficient routing.
 
-In the project directory, you can run:
+## Installation
+Install the package via npm:
+```bash
+npm install reactjs-side-nav
+```
 
-### `npm start`
+## Usage 
+1. Import the SideNav component:
+```bash
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SideNav from 'my-react-side-nav';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import './App.css'; // Your custom styles
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+const App = () => {
+  return (
+    <Router>
+      <div className="App">
+        <SideNav />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
+};
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+export default App;
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Customize SideNav styles:
+You can customize the styles by modifying the CSS file or by using inline styles.
+Example CSS (SideNav.css):
 
-### `npm run build`
+```css
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 20px;
+}
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
 
-### `npm run eject`
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Links
+- GitHub Repository: https://github.com/Eljethao/react-side-nav
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
